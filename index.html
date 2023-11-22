@@ -8,7 +8,25 @@
     <style>
     table, th, td {border:1px solid black; Border-collapse: collapse;}
     body {background-color: rgba(226, 156, 75, 0.144);}     
+    #radamais1{
+    display: none;
+    }
     </style>
+    <script>
+    function magiktriks1(){
+    document.getElementById("magiktrik1").innerHTML ="BOOM"
+    }
+    function raditsaturu(){
+    document.getElementById("radamais1").style.display="block"
+    document.getElementById("pogaradit1").style.display="none"
+    document.getElementById("pogaslept1").style.display="block"
+    }    
+    function pasleptsaturu(){
+    document.getElementById("radamais1").style.display="none"
+    document.getElementById("pogaradit1").style.display="block"
+    document.getElementById("pogaslept1").style.display="none"
+    }
+    </script>
         <title>Mana majaslapa</title>
         <body>
             <div class="container">
@@ -35,7 +53,11 @@
             </div>
             <div class="col-8">
             <div class="container text-end">
+                <button id="pogaradit1" onclick="raditsaturu()">Rādīt vairāk</button>
+            <div id="radamais1">
             <p>ndfunsdfpuundfsi odsfgonsdfopgn psdnfg jsdfngp sdfnipgn sdfig ndsfgn 9usdo[fgndsofgn sdfougn sdopfng pgndsofipnwehosd nfop bkj bk jb </p>
+                <button id="pogaslept1" onclick="pasleptsaturu()">Rādīt mazāk</button>
+            </div>
             </div>
             </div>
             </div>
@@ -74,6 +96,9 @@
             </div>
             </div>
             </div>
+            <div class="boomshakala">
+                <button id="pogamagik1" type="button" onclick="magiktriks1()">Maģijas triks</button>
+            <p id="magiktrik1">boom</p>
             </div>
             
         </body>
